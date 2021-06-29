@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+  width: fit-content;
+}
+
+.head {
+  background: crimson;
+  color: aliceblue;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.reporter {
+  position: relative;
+  margin-top: 20px;
+}
+
+.reporter::before {
+  content: "|";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
