@@ -1,0 +1,150 @@
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background: #dcdcdc;
+}
+
+nav {
+  padding: 0 10px;
+  height: 70px;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 40px;
+  width: 100%;
+  margin-right: 15px;
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* animated hamburber menu button */
+.burger-btn {
+  display: none;
+  width: 20px;
+  height: 2px;
+  border-radius: 5px;
+  background: #000;
+  transition: all 0.4s ease-in-out;
+  margin: 0 15px;
+  position: relative;
+  transform: rotate(180deg);
+}
+
+.burger-btn.active {
+  background: transparent;
+  transform: rotate(180deg);
+}
+
+.burger-btn::before,
+.burger-btn::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  background: #000;
+}
+.burger-btn::before {
+  transform: translateY(-8px);
+}
+.burger-btn::after {
+  transform: translateY(8px);
+}
+.burger-btn.active::before {
+  transform: translateY(0px) rotate(-45deg);
+}
+.burger-btn.active::after {
+  transform: translateY(0px) rotate(45deg);
+}
+
+/* sidebar css */
+
+.sidebar {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  max-width: 325px;
+  top: 70px;
+  left: 0;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  padding: 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar > div:first-child {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.components {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.subMenu {
+  padding: 0px 10px;
+  background: #dcdcdc;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.subData {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 0 20px;
+}
+.subData > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-btn {
+    display: block;
+  }
+
+  nav > div {
+    display: none;
+  }
+
+  .sidebar {
+    left: -120%;
+  }
+  .sidebar div:first-child {
+    display: flex;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+}
