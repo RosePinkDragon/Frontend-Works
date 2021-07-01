@@ -1,0 +1,28 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export const HomeLink = () => (
+  <Link to="/" className="fixedHome">
+    Home
+  </Link>
+);
+
+const Home = () => {
+  return (
+    <div>
+      Hey those are some tasks by me
+      <br />
+      {/* Node tree is used to create a tree like hierarchy structure for employees */}
+      <Link to="/task-1" className="brand_Name color-crimson">
+        Task 1: Node Tree
+      </Link>
+      <br />
+      {/* Admin UI is a responsive UI for the admin panel */}
+      <Link to="/task-2" className="brand_Name color-crimson">
+        Task 2: Admin UI
+      </Link>
+    </div>
+  );
+};
+
+export default Home;

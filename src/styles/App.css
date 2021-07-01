@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  background: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/** Reusable Styles are placed below */
+.btn {
+  margin: 10px;
+  padding: 10px 15px;
+  font-weight: bolder;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.fixedHome {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background: crimson;
+  color: white;
+  border-radius: 10px 0px 0px 0;
+}
+
+.logOut {
+  color: white !important;
+  background: red;
+}
+
+.cardWrap {
+  margin: 0 0 0 350px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-flow: column;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 150px;
+  height: 100px;
+  box-shadow: #dedede 10px 10px 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .cardWrap {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
