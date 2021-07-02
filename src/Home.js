@@ -13,12 +13,12 @@ const Home = () => {
       Hey those are some tasks by me
       <br />
       {/* Node tree is used to create a tree like hierarchy structure for employees */}
-      <Link to="/task-1" className="brand_Name color-crimson">
+      <Link to="/Hierarchy" className="brand_Name color-crimson">
         Task 1: Node Tree
       </Link>
       <br />
       {/* Admin UI is a responsive UI for the admin panel */}
-      <Link to="/task-2" className="brand_Name color-crimson">
+      <Link to="/AdminUI" className="brand_Name color-crimson">
         Task 2: Admin UI
       </Link>
     </div>
