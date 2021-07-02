@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import userLogo from "../images/userLogo.png";
-import "../styles/Layout.css";
+import userLogo from "images/userLogo.png";
+import "styles/Layout.css";
 import { sidebarData } from "./data";
 import SidebarSubMenu from "./SidebarSubMenu";
 
-export default function Layout({ children }) {
+export default function Layout({ children, logger }) {
   const [isActive, setIsActive] = useState(false);
 
   return (
@@ -23,17 +23,19 @@ export default function Layout({ children }) {
         </nav>
       </header>
       <div className={`sidebar ${isActive ? "active" : ""}`}>
-        <div>
+        <div className="sidebarUserInfo">
           <img className="logo" src={userLogo} alt="" />
           <p>Moheb Dabilkar</p>
         </div>
         <div className="components">
-          {sidebarData.map((data) => (
-            <SidebarSubMenu data={data} />
+          {sidebarData.map((data, idx) => (
+            <SidebarSubMenu key={idx} data={data} />
           ))}
         </div>
         <div>
-          <button className="btn">LogOut</button>
+          <button className="btn logOut" onClick={() => logger(false)}>
+            LogOut
+          </button>
         </div>
       </div>
       {children}

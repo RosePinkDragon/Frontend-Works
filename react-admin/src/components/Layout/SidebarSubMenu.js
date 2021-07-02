@@ -12,7 +12,11 @@ const SidebarSubMenu = ({ data }) => {
           </div>
           <div className="subData">
             {isActive
-              ? data.options.map((option, idx) => <p key={idx}>{option}</p>)
+              ? data.options.map((option, idx) => (
+                  <p key={idx} onClick={() => setIsActive(!isActive)}>
+                    {option}
+                  </p>
+                ))
               : ""}
           </div>
         </>
