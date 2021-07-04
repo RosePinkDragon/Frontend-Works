@@ -1,5 +1,8 @@
 header {
+  position: fixed;
   display: flex;
+  top: 0;
+  left: 0;
   justify-content: center;
   width: 100%;
   align-items: center;
@@ -73,7 +76,7 @@ nav div {
 
 .sidebar {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   max-width: 325px;
@@ -85,6 +88,7 @@ nav div {
   align-items: flex-start;
   flex-flow: column;
   padding: 0px;
+  overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
 
@@ -128,6 +132,10 @@ nav div {
   min-height: 30px;
 }
 
+.bodyWrap {
+  margin: 70px 0 0 350px;
+}
+
 @media screen and (max-width: 768px) {
   .burger-btn {
     display: block;
@@ -146,5 +154,9 @@ nav div {
 
   .sidebar.active {
     left: 0;
+  }
+
+  .bodyWrap {
+    margin: 70px auto;
   }
 }

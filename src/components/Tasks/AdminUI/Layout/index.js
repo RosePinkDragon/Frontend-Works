@@ -9,7 +9,7 @@ export default function Layout({ children, logger }) {
 
   return (
     <>
-      <header className="navWrap">
+      <header>
         <nav>
           <h1>App Name</h1>
           <div>
@@ -38,7 +38,7 @@ export default function Layout({ children, logger }) {
           </button>
         </div>
       </div>
-      {children}
+      <div className="bodyWrap">{children}</div>
     </>
   );
 }
