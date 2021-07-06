@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Layout from "components/Tasks/Task2/Layout";
-import LoginScreen from "components/Tasks/Task2/Login/";
-import { productData } from "components/Tasks/Task2/Home/data.js";
+import Layout from "components/Tasks/AdminUI/Layout";
+import LoginScreen from "components/Tasks/AdminUI/Login/";
+import { productData } from "components/Tasks/AdminUI/Home/data.js";
 import "styles/App.css";
+import Chart from "./Home/components/Chart";
 
 // ?? data is used to store external data to reuse.
 
 function AdminUI() {
-  const totalProducts = productData.reduce((a, c) => a + c.products.length, 0);
-  const [isLogged, setIsLogged] = useState(false);
+  const [isLogged, setIsLogged] = useState(true);
 
   return (
     <>
@@ -21,11 +21,8 @@ function AdminUI() {
                 <h5>{products.length}</h5>
               </div>
             ))}
-            <div className="card">
-              <h3>Total Products</h3>
-              <h5>{totalProducts}</h5>
-            </div>
           </div>
+          <Chart />
         </Layout>
       ) : (
         <LoginScreen logger={setIsLogged} />
