@@ -21,6 +21,11 @@ const Home = () => {
       <Link to="/AdminUI" className="brand_Name color-crimson">
         Task 2: Admin UI
       </Link>
+      <br />
+      {/* Admin UI  Class is same as Admin UI but with redux and class components */}
+      <Link to="/AdminUI" className="brand_Name color-crimson">
+        Task 2: Admin UI Class
+      </Link>
     </div>
   );
 };

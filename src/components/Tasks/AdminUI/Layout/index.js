@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import userLogo from "images/userLogo.png";
 import "styles/Layout.css";
-import { sidebarData } from "./data";
+import { sidebarData } from "utils/layoutData";
 import SidebarSubMenu from "./SidebarSubMenu";
 
 export default function Layout({ children, logger }) {
