@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Renders the expected page should render AdminUI 1`] = `
+Array [
+  <header>
+    <nav>
+      <h1>
+        App Name
+      </h1>
+      <div>
+        <img
+          alt=""
+          className="logo"
+          src="userLogo.png"
+        />
+        <p>
+          Moheb Dabilkar
+        </p>
+      </div>
+      <div
+        className="burger-btn "
+        onClick={[Function]}
+      />
+    </nav>
+  </header>,
+  <div
+    className="sidebar "
+  >
+    <div
+      className="sidebarUserInfo"
+    >
+      <img
+        alt=""
+        className="logo"
+        src="userLogo.png"
+      />
+      <p>
+        Moheb Dabilkar
+      </p>
+    </div>
+    <div
+      className="components"
+    >
+      <div
+        className="subMenu"
+      >
+        <p
+          onClick={[Function]}
+        >
+          Admin Menu
+        </p>
+      </div>
+      <div
+        className="subData"
+      >
+        
+      </div>
+      <div
+        className="subMenu"
+      >
+        <p
+          onClick={[Function]}
+        >
+          User Menu
+        </p>
+      </div>
+      <div
+        className="subData"
+      >
+        
+      </div>
+      <div
+        className="subMenu"
+      >
+        <p
+          onClick={[Function]}
+        >
+          Client Menu
+        </p>
+      </div>
+      <div
+        className="subData"
+      >
+        
+      </div>
+      <div
+        className="subMenu"
+      >
+        <p
+          onClick={[Function]}
+        >
+          Dev Menu
+        </p>
+      </div>
+      <div
+        className="subData"
+      >
+        
+      </div>
+    </div>
+    <div>
+      <button
+        className="btn logOut"
+        onClick={[Function]}
+      >
+        LogOut
+      </button>
+    </div>
+  </div>,
+  <div
+    className="bodyWrap"
+  >
+    <div
+      className="cardWrap"
+    >
+      <div
+        className="card"
+      >
+        <h3>
+          Passed Products
+        </h3>
+        <h5>
+          6
+        </h5>
+      </div>
+      <div
+        className="card"
+      >
+        <h3>
+          Upcoming Products
+        </h3>
+        <h5>
+          6
+        </h5>
+      </div>
+      <div
+        className="card"
+      >
+        <h3>
+          Total Products
+        </h3>
+        <h5>
+          6
+        </h5>
+      </div>
+    </div>
+    <div
+      className="chartWrap"
+    >
+      <div>
+        Loading...
+      </div>
+      <canvas
+        className="chart doughnut"
+        data-testid="canvas"
+        height={150}
+        onClick={[Function]}
+        role="img"
+        width={300}
+      />
+      <canvas
+        className="chart bar"
+        data-testid="canvas"
+        height={150}
+        onClick={[Function]}
+        role="img"
+        width={300}
+      />
+    </div>
+  </div>,
+]
+`;
+
+exports[`My Renders the expected page should render with given state from Redux store 1`] = `
+<div
+  className="login"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="formElement"
+    >
+      <label
+        htmlFor="email"
+      >
+        Email
+      </label>
+      <input
+        id="email"
+        name="email"
+        required={true}
+        type="email"
+      />
+    </div>
+    <div
+      className="formElement"
+    >
+      <label
+        htmlFor="password"
+      >
+        Password
+      </label>
+      <input
+        id="password"
+        name="password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <button
+      className="btn"
+    >
+      login
+    </button>
+  </form>
+</div>
+`;

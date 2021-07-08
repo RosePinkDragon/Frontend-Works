@@ -1,19 +1,21 @@
-import { useEffect } from "react";
+import { Component } from "react";
 import reporters from "./Reporters.json";
 import { graph } from "./utils";
 
 import "./styles.css";
 
-const NodeTree = () => {
+class NodeTree extends Component {
   // ?? use graph to pass create a node.
   // ?? first param is data second is the dom element to place it in.
-  //  !! Make sure you use it in useEffect only else will cause errors
+  //  !! Make sure you use it in useEffect or componentDidMount only else will cause errors
 
-  useEffect(() => {
-    graph(reporters, ".graph");
-  }, []);
+  componentDidMount = () => {
+    return graph(reporters, ".graph");
+  };
 
-  return <div className="graph"></div>;
-};
+  render() {
+    return <div className="graph" />;
+  }
+}
 
 export default NodeTree;

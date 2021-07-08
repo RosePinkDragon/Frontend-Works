@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home snapshot renders 1`] = `
+<div>
+  Hey those are some tasks by me
+  <br />
+  <a
+    className="brand_Name color-crimson"
+    href="/Hierarchy"
+    onClick={[Function]}
+  >
+    Task 1: Node Tree
+  </a>
+  <br />
+  <a
+    className="brand_Name color-crimson"
+    href="/AdminUI"
+    onClick={[Function]}
+  >
+    Task 2: Admin UI
+  </a>
+  <br />
+  <a
+    className="brand_Name color-crimson"
+    href="/AdminUI"
+    onClick={[Function]}
+  >
+    Task 2: Admin UI Class
+  </a>
+</div>
+`;
+
+exports[`HomeLink Renders HomeLink snap Renders 1`] = `
+<a
+  className="fixedHome"
+  href="/"
+  onClick={[Function]}
+>
+  Home
+</a>
+`;
