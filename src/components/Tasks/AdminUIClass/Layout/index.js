@@ -15,10 +15,6 @@ class Layout extends React.Component {
   }
 
   handleLogOut = () => {
-<<<<<<< Updated upstream
-    console.log("object");
-=======
->>>>>>> Stashed changes
     this.props.logOut();
   };
 

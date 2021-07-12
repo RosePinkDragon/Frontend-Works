@@ -5,43 +5,7 @@ exports[`Renders the Layout with Children Snapshot Renders 1`] = `
   <Layout
     logger={[Function]}
   >
-    <div
-      className="cardWrap"
-    >
-      <div
-        className="card"
-        key="Passed Products"
-      >
-        <h3>
-          Passed Products
-        </h3>
-        <h5>
-          6
-        </h5>
-      </div>
-      <div
-        className="card"
-        key="Upcoming Products"
-      >
-        <h3>
-          Upcoming Products
-        </h3>
-        <h5>
-          6
-        </h5>
-      </div>
-      <div
-        className="card"
-        key="Total Products"
-      >
-        <h3>
-          Total Products
-        </h3>
-        <h5>
-          6
-        </h5>
-      </div>
-    </div>
+    <ProductCards />
     <Chart />
   </Layout>
 </Fragment>
