@@ -1,7 +1,7 @@
 import React from "react";
 import { Map, GoogleApiWrapper } from "google-maps-react";
 
-const GoogleMaps = (props) => {
+export const GoogleMaps = (props) => {
   const data = {
     address: "",
 

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCards should render the Products Card Component correctly 1`] = `
+<ProductCards>
+  <div
+    className="cardWrap"
+  >
+    <div
+      className="card"
+      key="Passed Products"
+    >
+      <h3>
+        Passed Products
+      </h3>
+      <h5>
+        6
+      </h5>
+    </div>
+    <div
+      className="card"
+      key="Upcoming Products"
+    >
+      <h3>
+        Upcoming Products
+      </h3>
+      <h5>
+        6
+      </h5>
+    </div>
+    <div
+      className="card"
+      key="Total Products"
+    >
+      <h3>
+        Total Products
+      </h3>
+      <h5>
+        6
+      </h5>
+    </div>
+  </div>
+</ProductCards>
+`;

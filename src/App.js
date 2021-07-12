@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NodeTree from "components/Tasks/Hierarchy";
 import AdminUI from "components/Tasks/AdminUI";
+import AdminUIClass from "components/Tasks/AdminUIClass";
 import Home, { HomeLink } from "./Home.js";
 import AdminUIClass from "components/Tasks/AdminUIClass/index.js";
 

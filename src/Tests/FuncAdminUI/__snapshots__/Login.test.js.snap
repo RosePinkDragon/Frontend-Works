@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`log's out onClick should render the Login Screen Component correctly 1`] = `
+<LoginScreen
+  logger={[Function]}
+>
+  <div
+    className="login"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="formElement"
+      >
+        <label
+          htmlFor="email"
+        >
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          required={true}
+          type="email"
+        />
+      </div>
+      <div
+        className="formElement"
+      >
+        <label
+          htmlFor="password"
+        >
+          Password
+        </label>
+        <input
+          id="password"
+          name="password"
+          required={true}
+          type="password"
+        />
+      </div>
+      <button
+        className="btn"
+      >
+        login
+      </button>
+    </form>
+  </div>
+</LoginScreen>
+`;

@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Layout with Children Snapshot Renders 1`] = `
+<Fragment>
+  <header>
+    <nav>
+      <h1>
+        App Name
+      </h1>
+      <div>
+        <img
+          alt=""
+          className="logo"
+          src="userLogo.png"
+        />
+        <p>
+          Moheb Dabilkar
+        </p>
+      </div>
+      <div
+        className="burger-btn "
+        onClick={[Function]}
+      />
+    </nav>
+  </header>
+  <div
+    className="sidebar "
+  >
+    <div
+      className="sidebarUserInfo"
+    >
+      <img
+        alt=""
+        className="logo"
+        src="userLogo.png"
+      />
+      <p>
+        Moheb Dabilkar
+      </p>
+    </div>
+    <div
+      className="components"
+    >
+      <SidebarSubMenu
+        data={
+          Object {
+            "name": "Admin Menu",
+            "options": Array [
+              "All Admins",
+              "This Admin",
+              "None",
+            ],
+          }
+        }
+        key="0"
+      />
+      <SidebarSubMenu
+        data={
+          Object {
+            "name": "User Menu",
+            "options": Array [
+              "All Users",
+              "This User",
+              "None",
+            ],
+          }
+        }
+        key="1"
+      />
+      <SidebarSubMenu
+        data={
+          Object {
+            "name": "Client Menu",
+            "options": Array [
+              "All Clients",
+              "This Client",
+              "None",
+            ],
+          }
+        }
+        key="2"
+      />
+      <SidebarSubMenu
+        data={
+          Object {
+            "name": "Dev Menu",
+            "options": Array [
+              "All Devs",
+              "This Dev",
+              "None",
+            ],
+          }
+        }
+        key="3"
+      />
+    </div>
+    <div>
+      <button
+        className="btn logOut"
+        onClick={[Function]}
+      >
+        LogOut
+      </button>
+    </div>
+  </div>
+  <div
+    className="bodyWrap"
+  >
+    Test Children
+  </div>
+</Fragment>
+`;

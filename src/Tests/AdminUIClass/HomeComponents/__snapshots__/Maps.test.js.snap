@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Charts Snapshot Renders 1`] = `
+<GoogleMaps>
+  <div
+    className="chartWrap"
+  >
+    <Map
+      center={
+        Object {
+          "lat": 49.2827291,
+          "lng": -123.1207375,
+        }
+      }
+      centerAroundCurrentLocation={false}
+      containerStyle={Object {}}
+      initialCenter={
+        Object {
+          "lat": 49.2827291,
+          "lng": -123.1207375,
+        }
+      }
+      style={Object {}}
+      visible={true}
+      zoom={14}
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "position": "absolute",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "bottom": 0,
+              "display": "inherit",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          Loading map...
+        </div>
+      </div>
+    </Map>
+  </div>
+</GoogleMaps>
+`;
+
+exports[`Renders the Google Map?? Snapshot Renders 1`] = `
+<GoogleMaps>
+  <div
+    className="chartWrap"
+  >
+    <Map
+      center={
+        Object {
+          "lat": 49.2827291,
+          "lng": -123.1207375,
+        }
+      }
+      centerAroundCurrentLocation={false}
+      containerStyle={Object {}}
+      initialCenter={
+        Object {
+          "lat": 49.2827291,
+          "lng": -123.1207375,
+        }
+      }
+      style={Object {}}
+      visible={true}
+      zoom={14}
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "position": "absolute",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "bottom": 0,
+              "display": "inherit",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          Loading map...
+        </div>
+      </div>
+    </Map>
+  </div>
+</GoogleMaps>
+`;
+
+exports[`Renders the Google Wrapper?? Snapshot Renders 1`] = `
+<GoogleMaps>
+  <div
+    className="chartWrap"
+  >
+    <Map
+      center={
+        Object {
+          "lat": 49.2827291,
+          "lng": -123.1207375,
+        }
+      }
+      centerAroundCurrentLocation={false}
+      containerStyle={Object {}}
+      initialCenter={
+        Object {
+          "lat": 49.2827291,
+          "lng": -123.1207375,
+        }
+      }
+      style={Object {}}
+      visible={true}
+      zoom={14}
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "position": "absolute",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "bottom": 0,
+              "display": "inherit",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          Loading map...
+        </div>
+      </div>
+    </Map>
+  </div>
+</GoogleMaps>
+`;
