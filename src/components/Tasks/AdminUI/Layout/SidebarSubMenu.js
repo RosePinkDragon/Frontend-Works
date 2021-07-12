@@ -10,15 +10,17 @@ const SidebarSubMenu = ({ data }) => {
           <div className="subMenu">
             <p onClick={() => setIsActive(!isActive)}>{data.name}</p>
           </div>
-          <div className="subData">
-            {isActive
-              ? data.options.map((option, idx) => (
-                  <p key={idx} onClick={() => setIsActive(!isActive)}>
-                    {option}
-                  </p>
-                ))
-              : ""}
-          </div>
+          {isActive ? (
+            <div className="subData">
+              {data.options.map((option, idx) => (
+                <p key={idx} onClick={() => setIsActive(!isActive)}>
+                  {option}
+                </p>
+              ))}
+            </div>
+          ) : (
+            ""
+          )}
         </>
       )}
     </>

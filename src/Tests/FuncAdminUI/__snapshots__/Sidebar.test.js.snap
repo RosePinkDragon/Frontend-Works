@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidebarSubMenu Render should render the Title Component correctly 1`] = `
+<SidebarSubMenu
+  data={
+    Object {
+      "name": "Admin Menu",
+      "options": Array [
+        "All Admins",
+        "This Admin",
+        "None",
+      ],
+    }
+  }
+>
+  <div
+    className="subMenu"
+  >
+    <p
+      onClick={[Function]}
+    >
+      Admin Menu
+    </p>
+  </div>
+</SidebarSubMenu>
+`;

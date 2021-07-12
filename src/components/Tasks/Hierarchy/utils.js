@@ -14,10 +14,9 @@ export const graph = (data, element) => {
     .id((d) => d.id)
     .parentId((d) => d.reporting_id)(data);
 
-  var information = d3.tree().size([500, 300])(dataStructure);
-  console.log(information.descendants());
+  const information = d3.tree().size([500, 300])(dataStructure);
 
-  var circles = svg
+  const circles = svg
     .append("g")
     .selectAll("circle")
     .data(information.descendants());
@@ -29,7 +28,10 @@ export const graph = (data, element) => {
     .attr("cy", (d) => d.y)
     .attr("r", 5);
 
-  var connections = svg.append("g").selectAll("path").data(information.links());
+  const connections = svg
+    .append("g")
+    .selectAll("path")
+    .data(information.links());
 
   connections
     .enter()
@@ -55,7 +57,10 @@ export const graph = (data, element) => {
       );
     });
 
-  var names = svg.append("g").selectAll("text").data(information.descendants());
+  const names = svg
+    .append("g")
+    .selectAll("text")
+    .data(information.descendants());
   names
     .enter()
     .append("text")
