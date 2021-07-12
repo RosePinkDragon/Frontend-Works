@@ -23,11 +23,7 @@ const Home = () => {
       </Link>
       <br />
       {/* Admin UI  Class is same as Admin UI but with redux and class components */}
-<<<<<<< Updated upstream
-      <Link to="/AdminUI" className="brand_Name color-crimson">
-=======
       <Link to="/AdminUIClass" className="brand_Name color-crimson">
->>>>>>> Stashed changes
         Task 2: Admin UI Class
       </Link>
     </div>

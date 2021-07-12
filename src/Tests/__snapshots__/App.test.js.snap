@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`App HomeLink snapshot renders 1`] = `
+<a
+  className="fixedHome"
+  href="/"
+  onClick={[Function]}
+>
+  Home
+</a>
+`;
+
 exports[`App snapshot renders 1`] = `
 <div>
   Hey those are some tasks by me
@@ -25,7 +35,7 @@ exports[`App snapshot renders 1`] = `
     href="/AdminUIClass"
     onClick={[Function]}
   >
-    Task 2: Admin UI Class Component
+    Task 2: Admin UI Class
   </a>
 </div>
 `;

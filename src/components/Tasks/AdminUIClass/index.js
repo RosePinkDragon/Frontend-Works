@@ -10,11 +10,7 @@ import "styles/App.css";
 // ?? data is used to store external data to reuse.
 const mapStateToProps = (props) => {
   return {
-<<<<<<< Updated upstream
-    logged: props.rootReducer,
-=======
     status: props.loginReducers.logged,
->>>>>>> Stashed changes
   };
 };
 
@@ -22,11 +18,7 @@ class AdminUIClass extends React.Component {
   render() {
     return (
       <>
-<<<<<<< Updated upstream
-        {this.props.logged.logged ? (
-=======
         {this.props.status ? (
->>>>>>> Stashed changes
           <Layout>
             <ProductCards />
             <Chart />
